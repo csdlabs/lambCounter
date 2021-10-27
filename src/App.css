@@ -1,38 +1,45 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+*{
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: rgba(0, 0, 0, 0.8);
+  font-family: 'Roboto Mono', monospace;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  padding-top: 200px;
+}
+.counter{
+  border: 5px solid #35047c;
+  width: 400px;
+  border-radius: 5px;
+  padding: 20px;
+  margin-right: 100px;
+
+}
+input{
+  outline: none;
+  width: 100%;
+
+}
+.counter_entry-text{
+  height: 139px;
+  margin: 0px 0px 15px 0px;
+  border: 3px solid #35047c;
+  text-align: center;
+  font-size: 27px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.errorInput{
+  border: 2px solid red;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.errorText{
+  color: red;
+}
+.valueLine + .valueLine{
+  margin-bottom: 20px;
 }
